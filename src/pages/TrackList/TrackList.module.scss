@@ -1,0 +1,54 @@
+.container {
+  margin-top: 30px;
+  display: block;
+  align-items: center;
+  flex-direction: column;
+  .header {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4793ff;
+    width: 400px;
+    margin: 0 auto 30px auto;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px 5px;
+    line-height: 22px;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+
+  .noCities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    &__image {
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    &__text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #879fd1;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2em;
+      text-align: center;
+    }
+    &__btn {
+      width: 200px !important;
+      margin-top: 25px;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../scss//variables.scss";
+
+.card {
+  display: grid;
+  grid-template-columns: 40% 50% 10%;
+  align-items: center;
+  box-shadow: 5px 10px 30px 5px rgb(180 180 180 / 25%) !important;
+  border-radius: 20px !important;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #fff;
+  transition: 0.2s ease-in-out all;
+  @media (max-width: 550px) {
+    padding: 10px;
+    grid-template-columns: 40% 30% 30%;
+  }
+  &:hover {
+    border: 1px solid $text-blue;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    &__icon {
+      width: 70px;
+      height: 70px;
+      @media (max-width: 550px) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    &__name {
+      margin-left: 15px;
+      width: 100%;
+      color: #707277;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 17px;
+      text-align: left;
+      @media (max-width: 550px) {
+        font-size: 14px;
+        margin-left: 4px;
+        margin-right: 5px;
+      }
+    }
+  }
+  .temp {
+    display: flex;
+    align-items: center;
+    &__main {
+      color: #707277;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 17px;
+      text-align: left;
+      padding-right: 10px;
+      border-right: 1px solid #707277;
+      @media (max-width: 550px) {
+        font-size: 13px;
+        padding-right: 5px;
+      }
+    }
+    &__feels {
+      padding: 0 15px;
+      color: #707277;
+      opacity: 0.7;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 17px;
+      text-align: left;
+    }
+    &__desc {
+      border-left: 1px solid #707277;
+      margin-left: 5px;
+      padding-left: 10px;
+      color: #707277;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 17px;
+      text-align: left;
+      @media (max-width: 550px) {
+        display: none;
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    a,
+    svg {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+      @media (max-width: 550px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__link {
+      color: $text-blue !important;
+      transition: 0.2s ease-in-out all;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    &__trash {
+      width: 25px;
+      height: 25px;
+      color: #f2948a !important;
+      transition: 0.2s ease-in-out all;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../scss//variables.scss";
+
+.container {
+  position: fixed;
+  z-index: 1000;
+  bottom: 50px;
+  right: 50px;
+  @media (max-width: 550px) {
+    bottom: 25px;
+    right: 25px;
+  }
+  .iconCont {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $text-blue;
+    opacity: 0.8;
+    transition: 0.1s ease-in-out all;
+    &:hover {
+      opacity: 1;
+    }
+    cursor: pointer;
+    svg {
+      font-size: 2em;
+      color: $text-blue;
+    }
+  }
+}

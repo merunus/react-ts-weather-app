@@ -1,0 +1,55 @@
+@import "../../../scss//variables.scss";
+
+.card {
+  box-shadow: none !important;
+  background: rgba(71, 147, 255, 0.2) !important;
+  border-radius: 10px !important;
+  width: 150px;
+  padding: 11px;
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+  .day {
+    font-style: normal !important ;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #000000 !important;
+  }
+  .date {
+    color: $text-gray !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 17px !important;
+  }
+  .icon {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .temp_max {
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    line-height: 22px !important;
+    color: #000000 !important;
+  }
+  .temp_feels {
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+    color: $text-gray !important;
+    margin-top: 3px;
+  }
+  .description {
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+    margin-top: 15px;
+    color: $text-blue;
+  }
+}

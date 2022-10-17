@@ -1,0 +1,42 @@
+@import "../../scss//variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  @media (max-width: 400px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .switch {
+    display: flex;
+    align-items: center;
+    @media (max-width: 400px) {
+      margin-bottom: 20px;
+    }
+    .icon {
+      width: 25px !important;
+      height: 25px !important;
+    }
+    .darkIcon {
+      color: $text-blue;
+    }
+  }
+  .search {
+    margin-right: 25px;
+    input {
+      position: relative;
+      font-family: "Poppins", Roboto, system-ui, Tahoma, sans-serif !important;
+      padding: 10px !important;
+      border-radius: 0px 6px 6px 0px !important;
+    }
+
+    .form {
+      display: flex;
+      .button {
+        margin-left: 10px;
+        font-family: "Poppins", sans-serif !important;
+        height: 43px !important;
+      }
+    }
+  }
+}

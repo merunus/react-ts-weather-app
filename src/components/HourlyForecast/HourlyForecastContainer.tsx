@@ -19,7 +19,7 @@ const HourlyForecastContainer: React.FC<THourlyForecastContProps> = ({
 }) => {
   return (
     <>
-    <div className={styles.title}>Weekly Forecast</div>
+      <div className={styles.title}>Hourly Forecast</div>
       <section className={styles.container}>
         {isBigScreen && (
           <Paper classes={{ root: styles.hourlyBlock }}>
